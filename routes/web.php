@@ -11,9 +11,9 @@
 |
 */
 // Home
-Route::get('/', function () {
-    return view('layouts.front');
-});
+// Route::get('/', function () {
+//     return view('layouts.front');
+// });
 
 // Api Route
 Route::get('/', 'ApiController@getGuzzleRequest');

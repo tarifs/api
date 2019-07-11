@@ -188,9 +188,22 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-8">
                     <!-- Breaking News Widget -->
+                    <h1>API DATA</h1>
                     
                    @foreach($res as $data)
-                   <h1>{{ $data->webTitle }}</h1>
+                   <table class="table table-bordered">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>{{ $data->id }}</td>
+                        <td>{{ $data->title }}</td>
+                        <td>{{ $data->body }}</td>
+                    </tr>
+                       
+                   </table>
                    @endforeach
 
 
